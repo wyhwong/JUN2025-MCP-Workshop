@@ -58,7 +58,8 @@ repos:
       "-C", "./src",
       "-f", "requirements.txt",
       "-o", "requirements.txt",
-      "--without-hashes"
+      "--without-hashes",
+      "--all-extras"
     ]
     always_run: true
     verbose: true
