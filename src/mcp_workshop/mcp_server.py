@@ -9,7 +9,11 @@ Call get_image() to retrieve an image from the file system.
 Call get_description() to retrieve a description from the database.
 """
 
-mcp = FastMCP(name="AlbumAssistant", instructions=INSTRUCTIONS)
+mcp = FastMCP(
+    name="AlbumAssistant",
+    instructions=INSTRUCTIONS,
+    on_duplicate_tools="error",
+)
 
 
 @mcp.tool()
